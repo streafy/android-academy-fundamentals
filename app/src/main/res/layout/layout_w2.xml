@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundContainer"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/space_4x">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/space_4x"
+        android:background="@color/colorMyGray"
+        android:gravity="center"
+        android:padding="@dimen/space_4x"
+        android:text="@string/solutions_box_one_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/solution_two_content_box_height"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/space_4x"
+            android:background="@color/colorMyRed"
+            android:padding="@dimen/space_2x"
+            android:text="@string/solutions_box_two_text"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/solution_two_content_box_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_4x"
+            android:background="@color/colorMyYellow"
+            android:gravity="center"
+            android:padding="@dimen/space_2x"
+            android:text="@string/solutions_box_three_text"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/solution_two_content_box_height"
+            android:layout_gravity="start"
+            android:background="@color/colorMyGreen"
+            android:gravity="bottom"
+            android:padding="@dimen/space_2x"
+            android:text="@string/solutions_box_three_text"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/solution_two_bottom_menu_height"
+        android:layout_marginVertical="@dimen/space_4x"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/space_4x"
+            android:layout_weight="1"
+            android:background="@color/colorLightGray"
+            android:gravity="start"
+            android:padding="@dimen/space_2x"
+            android:text="@string/solutions_button_red_text"
+            android:textColor="#777777" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginEnd="@dimen/space_4x"
+            android:layout_weight="1"
+            android:background="@color/colorLightGray"
+            android:gravity="center"
+            android:padding="@dimen/space_2x"
+            android:text="@string/solutions_button_yellow_text"
+            android:textColor="#777777" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@color/colorLightGray"
+
+            android:gravity="end"
+            android:padding="@dimen/space_2x"
+            android:text="@string/solutions_button_green_text"
+            android:textColor="#777777" />
+
+    </LinearLayout>
+
+</LinearLayout>

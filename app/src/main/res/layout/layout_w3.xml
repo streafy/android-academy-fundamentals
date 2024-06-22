@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundContainer"
+    android:paddingHorizontal="@dimen/space_4x">
+
+    <TextView
+        android:id="@+id/boxOne"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/solution_three_title_height"
+        android:layout_marginTop="@dimen/space_4x"
+        android:background="@color/colorMyGray"
+        android:gravity="center"
+        android:padding="@dimen/space_4x"
+        android:text="@string/solutions_box_one_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boxTree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/boxTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/space_4x"
+        android:background="@color/colorMyYellow"
+        android:gravity="center"
+        android:padding="@dimen/space_2x"
+        android:text="@string/solutions_box_two_text"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintEnd_toStartOf="@id/boxTree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxOne" />
+
+    <TextView
+        android:id="@+id/boxTree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_4x"
+        android:layout_marginTop="@dimen/space_4x"
+        android:layout_marginBottom="@dimen/space_4x"
+        android:background="@color/colorMyRed"
+        android:padding="@dimen/space_2x"
+        android:text="@string/solutions_box_three_text"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/boxFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boxTwo"
+        app:layout_constraintTop_toBottomOf="@+id/boxOne" />
+
+    <TextView
+        android:id="@+id/boxFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_4x"
+        android:layout_marginBottom="@dimen/space_4x"
+        android:background="@color/colorMyGreen"
+        android:gravity="bottom"
+        android:padding="@dimen/space_2x"
+        android:text="@string/solutions_box_four_text"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@id/boxFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/boxTwo"
+        app:layout_constraintTop_toBottomOf="@+id/boxTree" />
+
+    <TextView
+        android:id="@+id/boxFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_4x"
+        android:background="@color/colorMyBlue"
+        android:gravity="bottom"
+        android:padding="@dimen/space_2x"
+        android:text="@string/solutions_box_five_text"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/boxTwo"
+        app:layout_constraintTop_toBottomOf="@+id/boxFour" />
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="boxTwo, boxFive" />
+
+    <TextView
+        android:id="@+id/redBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_4x"
+        android:background="@color/colorLightGray"
+        android:gravity="start"
+        android:padding="@dimen/space_2x"
+        android:text="@string/solutions_button_red_text"
+        android:textColor="#777777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yellowBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/yellowBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_4x"
+        android:background="@color/colorLightGray"
+        android:gravity="center"
+        android:padding="@dimen/space_2x"
+        android:text="@string/solutions_button_yellow_text"
+        android:textColor="#777777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/greenBox"
+        app:layout_constraintStart_toEndOf="@+id/redBox" />
+
+    <TextView
+        android:id="@+id/greenBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_4x"
+        android:background="@color/colorLightGray"
+        android:gravity="end"
+        android:padding="@dimen/space_2x"
+        android:text="@string/solutions_button_green_text"
+        android:textColor="#777777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yellowBox" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
