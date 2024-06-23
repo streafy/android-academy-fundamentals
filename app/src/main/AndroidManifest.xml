@@ -12,15 +12,53 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidacademyfundamentals"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".WS01Step01AssignmentActivity"
+            android:exported="true"
+            android:label="@string/ws01_step01_activity_title"
+            android:taskAffinity="com.android.fundamentals.workshop01.WS01Step01.ScreenRotationActivity">
+
+        </activity>
+
+        <!--
+        TODO(WS01:ST02:01) With activities from WS01 Step02:
+         WS01Step02ActivityA, WS01Step02ActivityB, WS01Step02ActivityC, WS01Step02ActivityD.
+         Change "launchMode" attribute values with one of the following: standard, singleTop, singleTask, singleInstance.
+         Rebuild and Run app.
+         Again, collapse application on the device and start app by clicking on WS01 Step02 icon.
+         Start several activities, then press device's "Back" button and see how activities are closing in a reverse order.
+         Back stack order is changed according to launch modes you choose.
+        -->
+        <activity
+            android:name=".WS01Step02ActivityA"
+            android:exported="true"
+            android:label="@string/ws01_step02_activity_title"
+            android:launchMode="standard">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- TODO(WS01:ST02) -->
+        <activity
+            android:name=".WS01Step02ActivityB"
+            android:label="@string/ws01_step02_activity_b_title"
+            android:launchMode="singleTop" />
+
+        <!-- TODO(WS01:ST02) -->
+        <activity
+            android:name=".WS01Step02ActivityC"
+            android:label="@string/ws01_step02_activity_c_title"
+            android:launchMode="singleInstance" />
+
+        <!-- TODO(WS01:ST02) -->
+        <activity
+            android:name=".WS01Step02ActivityD"
+            android:label="@string/ws01_step02_activity_d_title"
+            android:launchMode="singleTask" />
     </application>
 
 </manifest>
