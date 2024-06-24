@@ -34,13 +34,7 @@
             android:name=".WS01Step02ActivityA"
             android:exported="true"
             android:label="@string/ws01_step02_activity_title"
-            android:launchMode="standard">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:launchMode="standard" />
 
         <!-- TODO(WS01:ST02) -->
         <activity
@@ -59,6 +53,17 @@
             android:name=".WS01Step02ActivityD"
             android:label="@string/ws01_step02_activity_d_title"
             android:launchMode="singleTask" />
+
+        <activity
+            android:name=".WS02AssignmentActivity"
+            android:exported="true"
+            android:label="@string/ws02_activity_title">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
