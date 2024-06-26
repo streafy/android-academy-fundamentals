@@ -62,7 +62,12 @@
         <activity
             android:name=".WS03AssignmentActivity"
             android:exported="true"
-            android:label="@string/ws03_activity_title">
+            android:label="@string/ws03_activity_title" />
+
+        <activity
+            android:name=".WS04AssignmentActivity"
+            android:exported="true"
+            android:label="@string/ws04_activity_title">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
