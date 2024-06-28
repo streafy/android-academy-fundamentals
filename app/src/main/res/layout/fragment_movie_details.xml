@@ -28,13 +28,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="298dp" />
+            app:layout_constraintGuide_begin="@dimen/movie_details_image_guideline_top_offset" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginStart="@dimen/movie_details_back_start_offset"
+            android:layout_marginTop="@dimen/movie_details_back_top_offset"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/spacing_2x"
                 android:src="@drawable/back" />
 
             <TextView
@@ -51,14 +51,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/back"
                 android:layout_gravity="center"
-                android:textSize="12sp" />
+                android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/pg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="222dp"
+            android:layout_marginTop="@dimen/movie_details_pg_top_offset"
             android:text="@string/pg"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -70,10 +70,10 @@
             android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
+            android:layout_marginHorizontal="@dimen/spacing_4x"
             android:text="@string/name"
             android:textColor="#FFFFFF"
-            android:textSize="40sp"
+            android:textSize="@dimen/text_size_extra_large"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,62 +83,62 @@
             android:id="@+id/tag"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="@dimen/spacing_4x"
+            android:layout_marginTop="@dimen/spacing_1x"
             android:gravity="center_vertical"
             android:text="@string/tag"
             android:textColor="#FF3466"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_size_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/name" />
 
         <ImageView
             android:id="@+id/start_icon_one"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="@dimen/movie_details_star_icon_size"
+            android:layout_height="@dimen/movie_details_star_icon_size"
+            android:layout_marginStart="@dimen/spacing_4x"
+            android:layout_marginTop="@dimen/spacing_1x"
             android:src="@drawable/star_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tag" />
 
         <ImageView
             android:id="@+id/start_icon_two"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginStart="3.25dp"
+            android:layout_width="@dimen/movie_details_star_icon_size"
+            android:layout_height="@dimen/movie_details_star_icon_size"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:layout_marginStart="@dimen/movie_details_star_icon_start_offset"
             android:src="@drawable/star_icon"
             app:layout_constraintStart_toEndOf="@id/start_icon_one"
             app:layout_constraintTop_toBottomOf="@id/tag" />
 
         <ImageView
             android:id="@+id/start_icon_three"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginStart="3.25dp"
+            android:layout_width="@dimen/movie_details_star_icon_size"
+            android:layout_height="@dimen/movie_details_star_icon_size"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:layout_marginStart="@dimen/movie_details_star_icon_start_offset"
             android:src="@drawable/star_icon"
             app:layout_constraintStart_toEndOf="@id/start_icon_two"
             app:layout_constraintTop_toBottomOf="@id/tag" />
 
         <ImageView
             android:id="@+id/start_icon_four"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="@dimen/movie_details_star_icon_size"
+            android:layout_height="@dimen/movie_details_star_icon_size"
+            android:layout_marginTop="@dimen/spacing_1x"
             android:src="@drawable/star_icon"
-            android:layout_marginStart="3.25dp"
+            android:layout_marginStart="@dimen/movie_details_star_icon_start_offset"
             app:layout_constraintStart_toEndOf="@id/start_icon_three"
             app:layout_constraintTop_toBottomOf="@id/tag" />
 
         <ImageView
             android:id="@+id/start_icon_five"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginStart="3.25dp"
+            android:layout_width="@dimen/movie_details_star_icon_size"
+            android:layout_height="@dimen/movie_details_star_icon_size"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:layout_marginStart="@dimen/movie_details_star_icon_start_offset"
             android:src="@drawable/star_icon_not_filled"
             app:layout_constraintStart_toEndOf="@id/start_icon_four"
             app:layout_constraintTop_toBottomOf="@id/tag" />
@@ -147,12 +147,12 @@
             android:id="@+id/reviews"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="@dimen/spacing_1x"
             android:text="@string/reviews"
             android:textAllCaps="true"
-            android:layout_marginStart="8.89dp"
+            android:layout_marginStart="@dimen/movie_details_reviews_start_offset"
             android:textColor="#6D6D80"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/start_icon_five"
             app:layout_constraintTop_toBottomOf="@id/tag" />
@@ -161,11 +161,11 @@
             android:id="@+id/storyline_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="@dimen/spacing_4x"
+            android:layout_marginTop="@dimen/spacing_6x"
             android:text="@string/storyline_title"
             android:textColor="#ECECEC"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/reviews" />
@@ -174,10 +174,10 @@
             android:id="@+id/storyline_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginStart="@dimen/spacing_4x"
+            android:layout_marginTop="@dimen/spacing_1x"
             android:alpha="0.75"
-            android:lineSpacingExtra="4sp"
+            android:lineSpacingExtra="@dimen/storyline_content_line_spacing_extra"
             android:text="@string/storyline_content"
             android:textColor="#FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
@@ -187,11 +187,11 @@
             android:id="@+id/cast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="@dimen/spacing_4x"
+            android:layout_marginTop="@dimen/spacing_6x"
             android:text="@string/cast"
             android:textColor="#ECECEC"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/storyline_content" />
@@ -200,8 +200,8 @@
             android:id="@+id/cast_card_one"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="@dimen/spacing_4x"
+            android:layout_marginEnd="@dimen/spacing_2x"
             android:orientation="vertical"
             app:layout_constraintEnd_toStartOf="@+id/cast_card_two"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -220,14 +220,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_one"
                 android:textColor="#D8D8D8"
-                android:textSize="12sp" />
+                android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/cast_card_two"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="@dimen/spacing_2x"
             android:orientation="vertical"
             app:layout_constraintEnd_toStartOf="@+id/cast_card_three"
             app:layout_constraintStart_toEndOf="@id/cast_card_one"
@@ -245,14 +245,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_two"
                 android:textColor="#D8D8D8"
-                android:textSize="12sp" />
+                android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/cast_card_three"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="@dimen/spacing_2x"
             android:orientation="vertical"
             app:layout_constraintEnd_toStartOf="@+id/cast_card_four"
             app:layout_constraintStart_toEndOf="@id/cast_card_two"
@@ -270,14 +270,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_three"
                 android:textColor="#D8D8D8"
-                android:textSize="12sp" />
+                android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/cast_card_four"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/spacing_4x"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/cast_card_three"
@@ -295,7 +295,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_four"
                 android:textColor="#D8D8D8"
-                android:textSize="12sp" />
+                android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
