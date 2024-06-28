@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#191926">
@@ -16,16 +17,16 @@
             android:layout_height="19dp"
             android:layout_marginTop="56dp"
             android:src="@drawable/movie_list_icon"
-            app:layout_constraintEnd_toStartOf="@id/movie_list"
+            app:layout_constraintEnd_toStartOf="@id/movie_list_title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/movie_list"
+            android:id="@+id/movie_list_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Movie list"
+            android:text="@string/movie_list"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -40,7 +41,7 @@
             android:background="@drawable/movie_card_background_with_border"
             android:elevation="4dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/movie_list">
+            app:layout_constraintTop_toBottomOf="@id/movie_list_title">
 
             <ImageView
                 android:id="@+id/movie_image"
@@ -74,7 +75,7 @@
                 android:layout_margin="8dp"
                 android:background="@drawable/movie_card_pg_background"
                 android:gravity="center"
-                android:text="13+"
+                android:text="@string/pg"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -96,11 +97,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginBottom="2dp"
-                android:text="Action, Adventure, Drama"
+                android:text="@string/movie_list_genres"
                 android:textColor="#FF3466"
                 android:textSize="8sp"
                 app:layout_constraintBottom_toTopOf="@id/start_icon_one"
-                app:layout_constraintStart_toStartOf="@id/movie_image" />
+                app:layout_constraintStart_toStartOf="@id/movie_image"
+                tools:ignore="SmallSp" />
 
             <ImageView
                 android:id="@+id/start_icon_one"
@@ -178,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Avengers: End Game"
+                android:text="@string/movie_list_movie_name"
                 android:textColor="#ECECEC"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -190,7 +192,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="137 min"
+                android:text="@string/movie_list_movie_duration"
                 android:textColor="#565665"
                 android:textSize="8sp"
                 android:textStyle="bold"
