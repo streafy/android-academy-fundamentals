@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#191926</color>
+    <color name="title">#ECECEC</color>
+    <color name="movie_duration">#565665</color>
+
+    <color name="dark_pink">#FF3466</color>
+
+    <color name="light_gray">#D8D8D8</color>
+    <color name="dark_gray">#6D6D80</color>
 </resources>

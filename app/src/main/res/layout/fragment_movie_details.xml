@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#191926">
+    android:background="@color/background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/movie_details_pg_top_offset"
             android:text="@string/pg"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/name"
             app:layout_constraintStart_toStartOf="@id/name"
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/spacing_4x"
             android:text="@string/name"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_size_extra_large"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +87,7 @@
             android:layout_marginTop="@dimen/spacing_1x"
             android:gravity="center_vertical"
             android:text="@string/tag"
-            android:textColor="#FF3466"
+            android:textColor="@color/dark_pink"
             android:textSize="@dimen/text_size_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -151,7 +151,7 @@
             android:text="@string/reviews"
             android:textAllCaps="true"
             android:layout_marginStart="@dimen/movie_details_reviews_start_offset"
-            android:textColor="#6D6D80"
+            android:textColor="@color/dark_gray"
             android:textSize="@dimen/text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/start_icon_five"
@@ -164,7 +164,7 @@
             android:layout_marginStart="@dimen/spacing_4x"
             android:layout_marginTop="@dimen/spacing_6x"
             android:text="@string/storyline_title"
-            android:textColor="#ECECEC"
+            android:textColor="@color/title"
             android:textSize="@dimen/text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -179,7 +179,7 @@
             android:alpha="0.75"
             android:lineSpacingExtra="@dimen/storyline_content_line_spacing_extra"
             android:text="@string/storyline_content"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/storyline_title" />
 
@@ -190,7 +190,7 @@
             android:layout_marginStart="@dimen/spacing_4x"
             android:layout_marginTop="@dimen/spacing_6x"
             android:text="@string/cast"
-            android:textColor="#ECECEC"
+            android:textColor="@color/title"
             android:textSize="@dimen/text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -219,7 +219,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_one"
-                android:textColor="#D8D8D8"
+                android:textColor="@color/light_gray"
                 android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
@@ -244,7 +244,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_two"
-                android:textColor="#D8D8D8"
+                android:textColor="@color/light_gray"
                 android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
@@ -269,7 +269,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_three"
-                android:textColor="#D8D8D8"
+                android:textColor="@color/light_gray"
                 android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 
@@ -294,7 +294,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cast_card_four"
-                android:textColor="#D8D8D8"
+                android:textColor="@color/light_gray"
                 android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
 

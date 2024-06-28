@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#191926">
+    android:background="@color/background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_2x"
             android:text="@string/movie_list"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/movie_list_icon"
@@ -76,7 +76,7 @@
                 android:background="@drawable/movie_card_pg_background"
                 android:gravity="center"
                 android:text="@string/pg"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="@dimen/text_size_medium"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -98,7 +98,7 @@
                 android:layout_marginStart="@dimen/spacing_1_5x"
                 android:layout_marginBottom="@dimen/spacing_0_5x"
                 android:text="@string/movie_list_genres"
-                android:textColor="#FF3466"
+                android:textColor="@color/dark_pink"
                 android:textSize="@dimen/text_size_small"
                 app:layout_constraintBottom_toTopOf="@id/start_icon_one"
                 app:layout_constraintStart_toStartOf="@id/movie_image"
@@ -168,7 +168,7 @@
                 android:layout_marginBottom="@dimen/spacing_2x"
                 android:text="@string/reviews"
                 android:textAllCaps="true"
-                android:textColor="#6D6D80"
+                android:textColor="@color/dark_gray"
                 android:textSize="@dimen/text_size_small"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/movie_image"
@@ -181,7 +181,7 @@
                 android:layout_marginHorizontal="@dimen/spacing_2x"
                 android:layout_marginTop="@dimen/spacing_2x"
                 android:text="@string/movie_list_movie_name"
-                android:textColor="#ECECEC"
+                android:textColor="@color/title"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/movie_image" />
@@ -193,7 +193,7 @@
                 android:layout_marginHorizontal="@dimen/spacing_2x"
                 android:layout_marginBottom="@dimen/spacing_2x"
                 android:text="@string/movie_list_movie_duration"
-                android:textColor="#565665"
+                android:textColor="@color/movie_duration"
                 android:textSize="@dimen/text_size_small"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
