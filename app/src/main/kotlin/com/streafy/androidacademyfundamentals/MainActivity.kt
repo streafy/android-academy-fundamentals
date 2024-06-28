@@ -1,8 +1,6 @@
 package com.streafy.androidacademyfundamentals
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,15 +18,14 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val textView: TextView = findViewById(R.id.hello_world)
-        textView.setOnClickListener {
-            openMovieDetailsScreen()
+        if (savedInstanceState == null) {
+            navigateToMovieList()
         }
     }
 
-    private fun openMovieDetailsScreen() {
-        val intent = Intent(this, MovieDetailsActivity::class.java)
-
-        startActivity(intent)
+    private fun navigateToMovieList() {
+        supportFragmentManager.beginTransaction()
+            .add(R.id.main, FragmentMovieList())
+            .commit()
     }
 }
